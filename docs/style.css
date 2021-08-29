@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #6989ba;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    
+}
+
+.contenedor {
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 450px;
+    padding-bottom: 10px;
+}
+.header {
+    text-align: right;
+    font-size:1.5rem;
+    margin-right: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header p {
+    padding:5px;
+}
+
+.header button {
+    border: none;
+    border-radius: 10px;
+    padding:10px;
+}
+.resultado {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: right;
+    margin-right: 15px;
+    padding:5px;
+}
+.resultado .operador {
+    grid-column: span 1;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+}
+.resultado .textos {
+    grid-column: span 3;
+}
+.resultado .active {
+    font-size: 2.3rem;
+    min-height: 100px;
+}
+
+.resultado .pass{
+    min-height: 50px;
+    font-size:1.5rem;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+}
+
+.botones button {
+    background: none;
+    border: none;
+    grid-column:span 1;
+    font-size:1.3rem;
+    padding: 20px;
+    transition: all 0.5s ease-in;
+    min-height: 80px;
+}
+
+
+.operadores1 {
+    color: #2a9228 !important;
+}
+
+
+.operadores2 {
+    color: #db2917 !important;
+}
+
+.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+.light button:hover {
+    background:#dadada ;
+}
+
+.dark {
+    background: #0f0f0f;
+    color: #ffffff;
+}
+
+.dark button {
+    background: #0f0f0f;
+    color: #ffffff;
+}
+.dark button:hover {
+    background: #242424;
+}
